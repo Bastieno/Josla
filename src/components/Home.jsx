@@ -3,7 +3,7 @@ import ProductSection from './ProductSection'
 import HomeBlog from './HomeBlog'
 import GetInTouch from './GetInTouch'
 import KeyPartners from './KeyPartners'
-import WhatWeOffer from './WhatWeOffer2'
+import WhatWeOffer from './WhatWeOffer'
 
 export default function Home() {
   return (

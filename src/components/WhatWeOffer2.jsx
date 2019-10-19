@@ -5,8 +5,8 @@ import homelaptopImg from '../assets/images/laptophome.jpg'
 
 export default function WhatWeOffer() {
   return (
-    <section className="py-3">
-      <div className="container mt-2">
+    <section>
+      <div className="container mt-5">
         <div className="row">
           <div className="col-md-10 m-auto text-center">
             <h1>What we do</h1>
@@ -16,20 +16,36 @@ export default function WhatWeOffer() {
           </div>
         </div>
         <div className="row">
-          <div className="col-md-6 mb-4 text-center">
-            <img className="img-fluid" src={ analyticsImg } alt="analytics" style={{"height": "150px"}} />
-            <h4>Data Science As A Service</h4>
-            <p>We help organisations who want to leverage both operational and customer data
-              to generate insight that translate to optimal business outcomes.</p>
-            <Link className="btn btn-danger btn-xl" to="/">Learn More</Link>
-          </div>
-          <div className="col-md-6 mb-4 text-center">
-            <img className="img-fluid" src={ homelaptopImg } alt="laptop" style={{"height": "150px"}} />
-            <h4>Digital Product Development</h4>
-            <p>We take the time to understand clients’ requirements to deliver 
-            bespoke web and mobile applications as digital products.</p>
-            <Link className="btn btn-danger btn-xl" to="/">Learn More</Link>
-          </div>
+            <div className="col-md-6">
+              <div className="card py-2">
+                <div className="text-center">
+                  <img className="img-fluid" src={ analyticsImg } alt="analytics" />
+                </div>
+                <div className="card-body">
+                  <h4 className="card-title text-center">Data Science As A Service</h4>
+                  <p className="card-text text-center">We help organisations who want to leverage both operational and customer data
+                    to generate insight that translate to optimal business outcomes.</p>
+                </div>
+                <div className="col text-center">
+                  <Link className="btn btn-danger btn-xl" to="/">Learn More</Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="card py-2">
+                <div className="text-center">
+                  <img className="img-fluid" src={ homelaptopImg } alt="laptop" />
+                </div>
+                <div className="card-body">
+                  <h4 className="card-title text-center">Digital Product Development</h4>
+                  <p className="card-text text-center">We take the time to understand clients’ requirements to deliver 
+                  bespoke web and mobile applications as digital products.</p>
+                </div>
+                <div className="col text-center">
+                  <Link className="btn btn-danger btn-xl" to="/">Learn More</Link>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     </section>
